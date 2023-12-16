@@ -1,1 +1,18 @@
+Question: Is the data balanced?
+No, there is 1/2 other, 1/4 birds and 1/4 drones.
+
+How many perceptrons should the output layer have?
+3, drones, birds and other.
+
+i experimented with the resize of 128x256 and there was 
+more complex calculus in the layers of the model and the accuracy was smaller because the kernel need to pass
+on all the pixels that are bigger now.
+I think that 32x32 and 64x64 are the best resizes to the biggest accuracy, beacause too smaller are not complex to create a good
+model and too bigger are too complex.
+
+I experimented other data augmentation like zooming or shearing and other and the ram of the google machine
+stopped to work and disconnected because of too many data.
+
+I tried to change the batch size over 32 and gives me smaller accuracy, the epochs to 50 and gives me the same, the learning rate to 0.001 and the model
+learn too slowly and 0.1 to quickly, the default of 0.01 is fine.
 
